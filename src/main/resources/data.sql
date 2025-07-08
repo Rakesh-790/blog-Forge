@@ -1,0 +1,4 @@
+-- INSERT INTO blogs (heading, description) VALUES (
+--     'First Blog',
+--     'This is the first blog. It is a long description that goes on and on.'
+-- );

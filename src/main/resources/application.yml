@@ -1,0 +1,29 @@
+# spring.application.name=jt-blog
+
+# server.port= 1300
+# spring.datasource.url=jdbc:mysql://localhost/blog
+# spring.datasource.username=root
+# spring.datasource.password=Root
+
+spring:
+    application:
+        name: jt-blog
+
+    jpa:
+        hibernate:
+            ddl-auto: none
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+
+    # sql:
+    #     init:
+    #         mode: never
+
+    datasource:
+        url: jdbc:mysql://localhost/blog
+        username: root
+        password: Root
+server:
+    port: 1300

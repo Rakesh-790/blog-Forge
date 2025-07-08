@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="~{common/fragment :: head}"></head>
+
+<body>
+    <header th:replace="~{common/fragment :: header}"></header>
+    <div th:replace="~{common/fragment :: backBtn('Back', '/')}"></div><br>
+    <main class="container mt-3 p-2 rounded-4" style="border: 2px solid goldenrod;">
+
+        <div class="container mt-3 p-2 shadow-lg rounded-3">
+            <h3 class="text-center">EDIT BLOG</h3>
+
+            <form action="/edit-blog" method="post" th:object="${blog}">
+                <input type="text" name="id" th:field="*{id}" hidden>
+                <label for="blogHeading" class="form-lable">Enter Heading</label>
+                <input type="text" id="blogHeading" class="form-control rounded-3 " name="heading"
+                    th:field="*{heading}">
+                <label for="blogDescription">Enter Description</label>
+                <textarea id="blogDescription" class="form-control rounded-3" name="description"
+                    th:field="*{description}"></textarea>
+                <br>
+                <button class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

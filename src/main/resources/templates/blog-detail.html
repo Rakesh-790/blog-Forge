@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{common/fragment :: head}"></head>
+    
+<body>
+    <header th:replace="~{common/fragment :: header}"></header>
+    <div th:replace="~{common/fragment :: backBtn('Back', '/')}"></div><br>
+
+    <main class="container mt-3 p-2 rounded-4" style="border: 2px solid goldenrod;">
+
+        <div class="container shadow-lg rounded-3" >
+            <h2 class="text-center" th:text="${blog.heading}"></h2>
+            <hr>
+            <p th:text="${blog.description }" class="pb-3"></p>
+        </div>
+
+    </main>
+</body>
+</html>
